@@ -1,6 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 //session_start(); 
+
+if (function_exists('ob_gzhandler')) {
+  ob_start('ob_gzhandler');
+} else {
+  ob_start();
+}
 ?>
 
 
